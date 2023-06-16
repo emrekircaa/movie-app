@@ -1,0 +1,18 @@
+.navbarHeader {
+  background-color: #303030;
+  color: white;
+  padding: 1rem;
+}
+.navbarAddSection {
+  display: flex;
+  justify-content: end;
+  margin-right: 2rem;
+}
+.navbarAddButton {
+  padding: 0.5rem 2rem;
+  background-color: green;
+  border-radius: 12px;
+  color: white;
+  font-weight: 400;
+  letter-spacing: 1px;
+}

@@ -1,0 +1,78 @@
+.container {
+  min-height: 100vh;
+  color: white;
+  background-color: #303030;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 16rem));
+  grid-gap: 4rem 2rem;
+  align-content: space-between;
+  align-items: start;
+  justify-content: center;
+}
+.movieContainer {
+  position: relative;
+  text-align: center;
+  height: 500px;
+  overflow: hidden;
+}
+.images {
+  flex-direction: column;
+  width: 100%;
+}
+.cardSide {
+  flex-direction: row;
+}
+.title {
+  padding: 1.5rem 3rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.AddSection {
+  background-color: #303030;
+  text-align: end;
+  color: black;
+  padding-right: 10rem;
+  padding-top: 2rem;
+}
+.AddButton {
+  padding: 0.5rem 2rem;
+  background-color: blue;
+  border-radius: 12px;
+  color: white;
+  font-weight: 400;
+}
+.deleteButton {
+  padding: 0.5rem 2rem;
+  background-color: #7066e0;
+  border-radius: 12px;
+  color: white;
+  font-weight: 400;
+}
+.header {
+  background-color: #303030;
+  color: white;
+  padding: 1rem;
+}
+
+.movie-details .overview {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  max-height: 100%;
+  opacity: 0.9;
+  color: white;
+  box-sizing: border-box;
+  padding: 1rem;
+  transition: all 0.4s ease-in-out;
+  overflow-y: auto;
+  transform: translateY(101%);
+  width: 100%;
+}
+.movie:hover .overview {
+  z-index: 1;
+  background-color: #1b1b1b;
+  transform: translateY(0%);
+  width: 100%;
+}

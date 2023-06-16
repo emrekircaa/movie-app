@@ -1,0 +1,59 @@
+.Detailcontainer {
+  /* padding: 2rem 14rem;
+  height: 100vh;
+  background-color: #303030;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+  min-height: 100vh;
+  color: white;
+  background-color: #303030;
+  padding: 4rem 2rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 4rem 2rem;
+}
+.decsSection {
+  width: 70%;
+  padding: 0rem 6rem;
+}
+.desctitle {
+  margin-top: 2rem;
+}
+.detailHeader {
+  display: flex;
+  justify-content: space-between;
+}
+.buttonSection {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 4rem;
+}
+.voteAvarage {
+  font-weight: bold;
+  font-size: 28px;
+}
+.detailTitle {
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 1rem;
+}
+.imageSection {
+  display: flex;
+  justify-content: end;
+}
+.movieDeleteButton {
+  background-color: red;
+  padding: 0.5rem 2rem;
+  border-radius: 12px;
+  color: white;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+@media screen and (max-width: 900px) {
+  .Detailcontainer {
+    color: red;
+    flex-direction: row;
+  }
+}
