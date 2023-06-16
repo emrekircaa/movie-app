@@ -31,7 +31,6 @@ function MovieDetail(props) {
       {!loading && !open ? (
         <div className="Detailcontainer">
           <div className="imageSection">
-            {console.log("film", film)}
             <img
               src={film.poster_path}
               className="poster"

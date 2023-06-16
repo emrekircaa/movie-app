@@ -8,12 +8,14 @@ function Modal({ setOpenModal }) {
   const dispatch = useDispatch();
 
   const [values, setValues] = useState({
+    original_title: "",
     original_language: "",
     vote_average: "",
     genre_ids: "",
     cast: "",
     director: "",
     overview: "",
+    poster_path: "",
   });
 
   const inputs = [

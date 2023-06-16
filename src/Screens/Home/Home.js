@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "./Home.css";
-import data1 from "../../data1.json";
 import { useNavigate } from "react-router-dom";
 import Modals from "../../Components/AddModal/Modals";
 import Navbar from "../../Components/Navbar/Navbar";
@@ -13,11 +12,10 @@ function App() {
   const [loading, setLoading] = useState([]);
   const [open, setOpen] = useState(false);
   const navigate = useNavigate();
-  console.log(removedItem);
   useEffect(() => {
-    setData(data1.result);
+    setData(removedItem);
     setLoading(false);
-  }, []);
+  }, [removedItem]);
   function handleClick(id) {
     navigate(`movie/${id}`);
   }
@@ -39,7 +37,7 @@ function App() {
         {modalOpen && <Modals setOpenModal={setModalOpen} />}
         <div className="container">
           {!loading &&
-            removedItem.map((e, index) => (
+            data.map((e, index) => (
               <div
                 className="movieContainer"
                 key={index.toString()}
