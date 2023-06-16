@@ -21,7 +21,6 @@ function App() {
   function handleClick(id) {
     navigate(`movie/${id}`);
   }
-
   return (
     <>
       <Navbar refreshs={true} />

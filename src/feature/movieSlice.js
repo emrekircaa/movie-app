@@ -16,7 +16,7 @@ export const movieSlice = createSlice({
         (item) => item.id !== action.payload
       );
       state.movieList = nextCartItems;
-      toast.info("Deleted Movie", {
+      toast.success("Deleted Movie", {
         position: "top-right",
         autoClose: 2000,
       });
@@ -26,14 +26,14 @@ export const movieSlice = createSlice({
       let uniqID = new Date().valueOf();
       let tempProductItem = { ...action.payload, id: uniqID };
       state.movieList.push(tempProductItem);
-      toast.info("Added Movie", {
+      toast.success("Added Movie", {
         position: "top-right",
       });
       localStorage.setItem("movieListStroga", JSON.stringify(state.movieList));
     },
     refresh: (state) => {
       state.movieList = data.result;
-      toast.info("Refreshing", {
+      toast.info("Refreshed", {
         position: "top-right",
       });
       localStorage.setItem("movieListStroga", JSON.stringify(state.movieList));
