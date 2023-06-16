@@ -9,10 +9,16 @@
   margin-right: 2rem;
 }
 .navbarAddButton {
-  padding: 0.5rem 2rem;
-  background-color: green;
+  color: #fff;
+  background: #16ba557b;
+  background-clip: border;
+  border: 1px solid #16ba55;
+  z-index: 1;
+  padding: 10px;
   border-radius: 12px;
-  color: white;
-  font-weight: 400;
-  letter-spacing: 1px;
+  box-shadow: 1px 3px;
+}
+.navbarAddButton:active {
+  translate: 1px 3px;
+  box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.3) inset;
 }

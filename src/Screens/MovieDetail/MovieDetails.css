@@ -1,11 +1,4 @@
 .Detailcontainer {
-  /* padding: 2rem 14rem;
-  height: 100vh;
-  background-color: #303030;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center; */
   min-height: 100vh;
   color: white;
   background-color: #303030;
@@ -43,17 +36,31 @@
   display: flex;
   justify-content: end;
 }
+
 .movieDeleteButton {
-  background-color: red;
-  padding: 0.5rem 2rem;
+  color: #fff;
+  background: red;
+  background-clip: border;
+  border: 1px solid rgba(255, 0, 0, 0.504);
+  z-index: 1;
+  padding: 10px;
   border-radius: 12px;
-  color: white;
-  font-weight: 400;
-  letter-spacing: 1px;
+  box-shadow: 1px 3px;
 }
+.movieDeleteButton:active {
+  translate: 1px 3px;
+  box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.3) inset;
+}
+
 @media screen and (max-width: 900px) {
   .Detailcontainer {
-    color: red;
-    flex-direction: row;
+    grid-template-columns: 1fr;
+  }
+  .imageSection {
+    justify-content: center;
+  }
+  .decsSection {
+    width: 100%;
+    padding: 0;
   }
 }

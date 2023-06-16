@@ -52,7 +52,7 @@
   height: 45px;
   margin: 10px;
   border: none;
-  background-color: cornflowerblue;
+  background-color: #7877df;
   border-radius: 8px;
   font-size: 20px;
   cursor: pointer;
@@ -69,10 +69,19 @@
 .modalButton {
   margin-top: 1rem;
   padding: 0.5rem 2rem;
-  background-color: blue;
+  background-color: #7877df;
   border-radius: 12px;
   color: white;
   font-weight: 400;
   width: 100%;
   letter-spacing: 1px;
+}
+@media screen and (max-width: 900px) {
+  .grids {
+    overflow: scroll;
+    max-height: 60vh;
+  }
+  .modalBackground {
+    margin: 0;
+  }
 }
