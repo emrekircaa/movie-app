@@ -50,8 +50,6 @@ function MovieDetail(props) {
                 Language / {film.original_language}
               </div>
             </div>
-
-            {/* //    text-align: justify;: ; */}
             <div className="desctitle">
               <div className="detailTitle">THE GENRES</div>
 
